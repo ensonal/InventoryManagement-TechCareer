@@ -1,0 +1,16 @@
+<div class="main-page d-flex overflow-hidden h-100 w-100">
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="login-form rounded d-flex flex-column justify-content-center">
+            <h2 class="text-center">Employee Login</h2>
+            <mat-form-field appearance="outline">
+                <mat-icon matPrefix color="primary">person_outline</mat-icon>
+                <mat-label>Employee ID</mat-label>
+                <input matInput placeholder="Placeholder">
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="mt-3" (click)="navigateToEmployeeHomePage()">Login</button>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end flex-wrap">
+        <img src="assets/images/login-background.png" class="image">
+    </div>
+</div>
