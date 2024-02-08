@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-login',
@@ -11,6 +12,17 @@ import {MatButtonModule} from '@angular/material/button';
   templateUrl: './customer-login.component.html',
   styleUrl: './customer-login.component.scss'
 })
-export class CustomerLoginComponent {
+export class CustomerLoginComponent implements OnInit{
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+
+  }
+
+  navigateToCustomerHomePage() {
+    this.router.navigate(['/customer-home']);
+  }
+  
+
 
 }
