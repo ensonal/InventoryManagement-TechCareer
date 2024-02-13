@@ -1,1 +1,1 @@
-# InventoryManagement-SPA-Angular-AzureFunctionApp-.NetCore
+# InventoryManagement
